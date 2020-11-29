@@ -1,7 +1,7 @@
 {
 	"name": "geekofia-hooks",
 	"description": "Some very handy custom hooks",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"main": "index.js",
 	"author": {
 		"name": "Chandan Kumar Mandal",
@@ -11,7 +11,7 @@
 	"license": "GPL-3.0",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:chankruze/geekofia-hooks.git"
+		"url": "https://github.com/chankruze/geekofia-hooks/"
 	},
 	"bugs": {
 		"url": "https://github.com/chankruze/geekofia-hooks/issues"
