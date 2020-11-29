@@ -1,0 +1,34 @@
+{
+	"name": "geekofia-hooks",
+	"description": "Some very handy custom hooks",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": {
+		"name": "Chandan Kumar Mandal",
+		"email": "chankruze@geekofia.in",
+		"url": "https://github.com/chankruze"
+	},
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:chankruze/geekofia-hooks.git"
+	},
+	"bugs": {
+		"url": "https://github.com/chankruze/geekofia-hooks/issues"
+	},
+	"scripts": {
+		"build": "babel src --out-dir .",
+		"bump": "npm version",
+		"prepublishOnly": "yarn build",
+		"watch": "nodemon --watch src --exec \"yarn build\"",
+		"refresh": "yarn install --force"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.8",
+		"@babel/core": "^7.12.9",
+		"@babel/preset-env": "^7.12.7",
+		"@babel/preset-react": "^7.12.7",
+		"nodemon": "^2.0.6",
+		"react": "^17.0.1"
+	}
+}
