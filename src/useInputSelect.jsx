@@ -7,15 +7,16 @@ Copyright (c) Geekofia 2020 and beyond
 
 import { useState } from 'react';
 
-export const useInputSelect = (initialValue) => {
-	const [value, setValue] = useState(initialValue);
+export const useInputSelect = (defaultSelectedValue) => {
+	const [value, setValue] = useState(defaultSelectedValue);
 
-	const reset = () => setValue(initialValue);
+	const reset = () => setValue(defaultSelectedValue);
 
 	const bind = {
 		value,
-		onChange: () => {
-			setValue(!value);
+		onChange: (e) => {
+			// setValue(e.target.value);
+			setValue(e.target.options[e.target.options.selectedIndex].value);
 		}
 	};
 
